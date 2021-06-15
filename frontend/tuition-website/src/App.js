@@ -12,7 +12,9 @@ import MainLayout from './Layout/MainLayout';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Topics from './Pages/Topics';
-import Examination from './Pages/Examination/Examination';
+import TDDExamination from './Pages/Examination/TDDExamination';
+import GitExamination from './Pages/Examination/GitExamination';
+import GitHubExamination from './Pages/Examination/GitHubExamination'
 import ContactUs from './Pages/ContactUs';
 
 function App() {
@@ -31,15 +33,28 @@ function App() {
             <Login />
         )} />
 
-        <Route path="/courses" render={() => (
+        <Route exact path="/courses" render={() => (
           <MainLayout>
             <Topics />
           </MainLayout>
         )} />
 
-        <Route path="/questions" render={() => (
+        {/* courses */}
+        <Route exact path="/courses/Test-Driven-Development" render={() => (
           <MainLayout>
-            <Examination />
+            <TDDExamination />
+          </MainLayout>
+        )} />
+
+        <Route exact path="/courses/Git" render={() => (
+          <MainLayout>
+            <GitExamination />
+          </MainLayout>
+        )} />
+
+        <Route exact path="/courses/GitHub" render={() => (
+          <MainLayout>
+            <GitHubExamination />
           </MainLayout>
         )} />
 
@@ -48,6 +63,7 @@ function App() {
             <ContactUs />
           </MainLayout>
         )} />
+
 
       </Switch>
 

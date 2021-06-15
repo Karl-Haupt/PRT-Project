@@ -24,10 +24,7 @@ function Header() {
                             <Link to="/" >Home</Link>
                         </li>
                         <li>
-                            <Link to="/courses">Topics</Link>
-                        </li>
-                        <li>
-                            <Link to="/questions">Q/A</Link>
+                            <Link to="/courses">Courses</Link>
                         </li>
                         <li>
                             <Link to="/login">

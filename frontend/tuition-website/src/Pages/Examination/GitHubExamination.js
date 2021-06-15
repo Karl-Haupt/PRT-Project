@@ -1,18 +1,17 @@
 import React from 'react';
-import Questions from '../../Components/Questions/Questions';
+import GitHubQuestions from '../../Components/Questions/GitHubQuestions';
 import ExaminationSidebar from '../../Components/ExaminationSidebar/ExaminationSidebar';
 import './Examination.css';
 
-function Examination() {
+function GitHubExamination() {
     return (
         <div className="examination__content">
             <ExaminationSidebar />
-
-            <Questions />
-
+            
+            <GitHubQuestions />
         
         </div>
     )
 }
 
-export default Examination
+export default GitHubExamination;

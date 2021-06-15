@@ -1,5 +1,6 @@
 import React from 'react';
 import Course from './Course';
+import { Link } from 'react-router-dom';
 import './Courses.css';
 
 function Courses() {
@@ -10,7 +11,9 @@ function Courses() {
                 <h2>Courses</h2>
 
                 <div className="courses__container">
-                    <Course courseName="GitHub"/>
+                    <Link to="/courses/GitHub">
+                        <Course courseName="GitHub"/>
+                    </Link>
                         <div className="courses__courseInfo">
                             <img src='/assets/GitHubLogo.png' alt="GitHub Logo" />
 
@@ -20,7 +23,9 @@ function Courses() {
                             </p>
                         </div>
 
-                    <Course courseName="Git"/>
+                    <Link to="/courses/Git">
+                        <Course courseName="Git"/>
+                    </Link>
                         <div className="courses__courseInfo">
                                 <img src="../../assets/GitLogo.png" alt="Git Logo" />
 
@@ -30,7 +35,9 @@ function Courses() {
                                 </p>
                         </div>
 
-                    <Course courseName="Test-Driven Development"/>
+                    <Link to="/courses/Test-Driven-Development">
+                        <Course courseName="Test-Driven-Development"/>
+                    </Link>
                         <div className="courses__courseInfo">
                                 <img src="../../assets/TDDLogo.png" alt="Test-Driven Development concept" />
 
