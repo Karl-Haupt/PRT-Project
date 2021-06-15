@@ -82,9 +82,15 @@
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 /* input[type="radio"] {
     display: none;
 } */
+=======
+input[type="radio"] {
+    display: none;
+}
+>>>>>>> db6506702090c77c7fef6ea7ac0e859646368200
 
 #signUp:checked~.slide-tab {
     left: 50%;
