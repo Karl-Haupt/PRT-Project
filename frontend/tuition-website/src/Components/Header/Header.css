@@ -12,8 +12,8 @@
     margin: 0px auto;
 }
 .header__logo {
-    width: 360px !important;
-    height: 60px !important;
+    width: 60px !important;
+    height: 30px !important;
     z-index: 1;
 }
 .header__logo img {

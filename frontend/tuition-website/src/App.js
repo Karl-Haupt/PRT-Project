@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 
 // Layouts
 import MainLayout from './Layout/MainLayout';
+import PolicyLayout from './Layout/PolicyLayout';
 
 // Pages
 import Home from './Pages/Home';
@@ -16,6 +17,10 @@ import TDDExamination from './Pages/Examination/TDDExamination';
 import GitExamination from './Pages/Examination/GitExamination';
 import GitHubExamination from './Pages/Examination/GitHubExamination'
 import ContactUs from './Pages/ContactUs';
+
+//Policy
+import TermsOfServices from './Pages/PolicyPages/TermsOfServices';
+import PrivacyPolicy from './Pages/PolicyPages/PrivacyPolicy';
 
 function App() {
   return (
@@ -62,6 +67,18 @@ function App() {
           <MainLayout>
             <ContactUs />
           </MainLayout>
+        )} />
+
+        <Route path="/Policy/TermsOfService" render={() => (
+          <PolicyLayout>
+            <TermsOfServices />
+          </PolicyLayout>
+        )} />
+
+        <Route path="/Policy/Privacy" render={() => (
+          <PolicyLayout>
+            <PrivacyPolicy />
+          </PolicyLayout>
         )} />
 
 

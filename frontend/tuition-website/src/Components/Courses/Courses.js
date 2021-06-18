@@ -3,6 +3,10 @@ import Course from './Course';
 import { Link } from 'react-router-dom';
 import './Courses.css';
 
+import GitHubLogo from '../../assets/GitHubLogo.png';
+import GitLogo from '../../assets/GitLogo.png';
+import TDDLogo from '../../assets/TDDLogo.png';
+
 function Courses() {
     return (
         <div className="courses" >
@@ -15,7 +19,7 @@ function Courses() {
                         <Course courseName="GitHub"/>
                     </Link>
                         <div className="courses__courseInfo">
-                            <img src='/assets/GitHubLogo.png' alt="GitHub Logo" />
+                            <img src={GitHubLogo} alt="GitHub Logo" />
 
                             <p>
                                 GitHub is a code hosting platform that enables user to collaborate and use version control like Git. GitHub allows for user to
@@ -27,7 +31,7 @@ function Courses() {
                         <Course courseName="Git"/>
                     </Link>
                         <div className="courses__courseInfo">
-                                <img src="../../assets/GitLogo.png" alt="Git Logo" />
+                            <img src={GitLogo} alt="Git Logo" />
 
                                 <p>
                                     Git is a version control system meaning that Git track changes in computer files and co-oridnates work on those files 
@@ -39,7 +43,7 @@ function Courses() {
                         <Course courseName="Test-Driven-Development"/>
                     </Link>
                         <div className="courses__courseInfo">
-                                <img src="../../assets/TDDLogo.png" alt="Test-Driven Development concept" />
+                                <img src={TDDLogo} alt="Test-Driven Development concept" />
 
                                 <p>
                                    Test-Driven Development also known as TDD is a method of testing your code in small test cases, allowing for easier debugging

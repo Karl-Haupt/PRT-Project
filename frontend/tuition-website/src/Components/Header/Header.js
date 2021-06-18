@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 
 import { Link, useLocation } from 'react-router-dom';
+import TuitionLogo from '../../assets/TuitionLogo.png';
 
 function Header() {
     const location = useLocation();

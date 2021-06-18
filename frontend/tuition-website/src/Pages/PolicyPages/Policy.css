@@ -1,0 +1,14 @@
+.policy {
+    margin: 0 25%;
+    padding: 40px;
+    background-color: white;
+    height: 100%;
+}
+.policy__container {
+    margin: 10px auto;
+}
+.policy__container img {
+    width: 100%;
+    height: 300px;
+    border: 4px solid #333;
+}

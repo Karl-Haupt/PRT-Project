@@ -1,5 +1,5 @@
 .footer {
-    width: 100%;
+    /* width: 100%; */
     height: 200px;
     padding: 0px 0px;
     padding-bottom: 70px;
@@ -14,6 +14,15 @@
     display: flex;
     flex: 0.4;
     flex-direction: column;
+}
+.footer__socailMedia {
+    width: 60px;
+    height: 120px;
+}
+.footer__socailMedia img {
+    margin-top: 25px;
+    width: 70%;
+    height: 100%;
 }
 .footer__socailMedia p {
     width: 100%;
@@ -34,8 +43,9 @@
     
     color: white
 }
-.footer__socialMediaIcon a {
-    color: white
+.footer__socialMediaIcon a, .footer__policys a {
+    color: white;
+    text-decoration: none   
 }
 .footer__policys {
     display: flex;
@@ -49,7 +59,7 @@
     list-style-type: none;
     margin-left: -41px;
 }
-.footer__policys ul li:hover {
+.footer__policys ul li:hover, .footer__policys a:hover {
     color: #FFBF00;
 }
 .footer__policys h4 {
