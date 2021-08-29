@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useAlert } from 'react-alert';
 import { Link } from 'react-router-dom';
 import './ExaminationSidebar.css';
 
@@ -11,6 +13,16 @@ function ExaminationSidebar() {
     let sidebarClassname = sidebar ? 'examinationSidebar open' : 'examinationSidebar';
 
     const toggleSidebar = () => setSidebar(!sidebar);
+
+    const alert = useAlert();
+
+    const { user, error } = useSelector(state => state.auth);
+
+    useEffect(() => {
+        if(error) {
+            alert.error(error);
+        }
+    }, [error, user])
     
     return (
         <div className={sidebarClassname}>
@@ -30,9 +42,11 @@ function ExaminationSidebar() {
                     <Course courseName="GitHub" className="examinationSidebar__course"/>
                 </Link>
 
-                <Link to="/courses/Test-Driven-Development">
-                    <Course courseName="Test-Driven-Development" className="examinationSidebar__course"/>
-                </Link>
+                {user && user.isPaid && (
+                    <Link to="/courses/Test-Driven-Development">
+                        <Course courseName="Test-Driven-Development"/>
+                    </Link>
+                )}
             </div>
         </div>
     )

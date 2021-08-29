@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, Fragment } from 'react';
+import { useSelector } from 'react-redux';
+import { useAlert } from 'react-alert';
 import Course from './Course';
 import { Link } from 'react-router-dom';
 import './Courses.css';
@@ -8,6 +10,16 @@ import GitLogo from '../../assets/GitLogo.png';
 import TDDLogo from '../../assets/TDDLogo.png';
 
 function Courses() {
+    const alert = useAlert();
+
+    const { user, error } = useSelector(state => state.auth);
+
+    useEffect(() => {
+        // if(error) {
+        //     alert.error(error);
+        // }
+    }, [error, user])
+
     return (
         <div className="courses" >
 
@@ -39,17 +51,22 @@ function Courses() {
                                 </p>
                         </div>
 
-                    <Link to="/courses/Test-Driven-Development">
-                        <Course courseName="Test-Driven-Development"/>
-                    </Link>
-                        <div className="courses__courseInfo">
-                                <img src={TDDLogo} alt="Test-Driven Development concept" />
+                    {user && user.isPaid && (
+                        <Fragment>
+                            <Link to="/courses/Test-Driven-Development">
+                            <Course courseName="Test-Driven-Development"/>
+                            </Link>
+                            <div className="courses__courseInfo">
+                                    <img src={TDDLogo} alt="Test-Driven Development concept" />
 
-                                <p>
-                                   Test-Driven Development also known as TDD is a method of testing your code in small test cases, allowing for easier debugging
-                                   and validation of code. TDD has 3 ativites associated with it coding, testing and reftoring.
-                                </p>
-                        </div>
+                                    <p>
+                                    Test-Driven Development also known as TDD is a method of testing your code in small test cases, allowing for easier debugging
+                                    and validation of code. TDD has 3 ativites associated with it coding, testing and reftoring.
+                                    </p>
+                            </div>
+                        </Fragment>
+                    )}
+
                 </div>
             </div>
         </div>

@@ -1,0 +1,215 @@
+  
+  
+[
+  {
+    "courseTitle": "Test Driven Development",
+    "questions": [
+    {
+      "questionText": "Refactoring is not one of the stages of TDD,True or False",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect" : "false"},
+        {"answerText": "False", "isCorrect" : "true"}
+      ]
+    },
+     {
+      "questionText": "TDD required a developer to write the test cases before writing the actual production code.True or False",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect": "true"},
+        {"answerText": "False", "isCorrect": "false"}
+      ]
+    },
+     {
+      "questionText": "TDD is basicaly Unit Testing,True or False",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect" : "false"},
+        {"answerText": "False", "isCorrect" : "true"}
+      ]
+    },
+     {
+      "questionText": "TDD can help a developer improve his initial design of a method by forcing him to come up with situations in which the test case can fail",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect": "true"},
+        {"answerText": "False", "isCorrect": "false"}
+      ]
+    },
+      {
+      "questionText": "TDD does not help in detection of bugs at an early developmental stages of SDLC.",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect": "true"},
+        {"answerText": "False", "isCorrect": "false"}
+      ]
+    },
+      {
+      "questionText": "TDD can help a developer improve his initial design of a method by forcing him to come up with situations in which the test case can fail",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect": "true"},
+        {"answerText": "False", "isCorrect": "false"}
+      ]
+    },
+    {
+      "questionText": "Git Flow is organized around releases, where there is potentially a significant amount of work in development at any given time that hasn’t been approved for production and GitHub Flow, there is no strict separation between your main branch and your development branch. This makes things like hotfixes redundant.True or False",
+      "answerOptions": [
+        {"answerText": "True", "isCorrect": "false"},
+        {"answerText": "False", "isCorrect": "true"}
+      ]
+    },
+    {
+      "questionText": "There are _____ types of TDD.",
+      "answerOptions": [
+        {"answerText": "5", "isCorrect": "false"},
+        {"answerText": "3", "isCorrect": "false"},
+        {"answerText": "2", "isCorrect": "true"}
+      ]
+    },
+    {
+      "questionText": "ATDD is also called __________",
+      "answerOptions": [
+        {"answerText": "SDD", "isCorrect": "false"},
+        {"answerText": "Behavior Driven Development", "isCorrect": "true"},
+        {"answerText": "Acceptance test–driven development", "isCorrect": "false"}
+      ]
+    }
+  ]},
+  {
+    "courseTitle": "GitHub",
+    "questions": [
+      {
+        "questionText": "By default master branch can be set as the main branch in a repository,True or False",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": true},
+          {"answerText": "False", "isCorrect": false}
+        ]
+      },
+       {
+        "questionText": "When you use a repository’s SSH URL to push a commit to GitHub, you do not have to provide your username and password on each push. How does GitHub know that it’s you?",
+        "answerOptions": [
+          {"answerText": "Reference to parent commit objects", "isCorrect": false},
+          {"answerText": "GitHub provides APIs with REST and GraphQL layouts.", "isCorrect": false},
+          {"answerText": "GitHub uses the commits email address, which is set either on a local repository level, or globally across repositories on a given machine.", "isCorrect": true}
+        ]
+      },
+       {
+        "questionText": "The benefits of hosting an application using GitHub Pages?",
+        "answerOptions": [
+          {"answerText": "Quick and easy to set up", "isCorrect": true},
+          {"answerText": "Various soft limitations that make it potentially unsuitable for commercial applications.", "isCorrect": false}
+        ]
+      },
+       {
+        "questionText": "Limitation of hosting an application using GitHub Pages?",
+        "answerOptions": [
+          {"answerText": "It’s free!", "isCorrect": false},
+          {"answerText": "No control over caching, authorization, or any other HTTP headers", "isCorrect": true},
+          {"answerText": "Generous (though not unlimited) limits on usage that make it great for open-source, not-for-profit, or prototype projects.", "isCorrect": false}
+        ]
+      },
+        {
+        "questionText": "Step you can take to ensure the security of your GitHub account?",
+        "answerOptions": [
+          {"answerText": "Ensuring the security of machines that have key pair access to your account", "isCorrect": true},
+          {"answerText": "Make the necessary changes in the files so that conflict does not arise again", "isCorrect": false},
+          {"answerText": "Dont get rid of unused key pairs for your account", "isCorrect": false}
+        ]
+      },
+        {
+        "questionText": "Git Flow is organized around releases, where there is potentially a significant amount of work in development at any given time that hasn’t been approved for production and GitHub Flow, there is no strict separation between your main branch and your development branch. This makes things like hotfixes redundant.True or False",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": true},
+          {"answerText": "False", "isCorrect": false}
+        ]
+      },
+        {
+        "questionText": "What is a feature that GitHub provides to ensure high-quality issues are submitted to your repositories?",
+        "answerOptions": [
+          {"answerText": "Git fetch is also used for the same purpose but it works in a slightly different way", "isCorrect": false},
+          {"answerText": "Provides issue templates for repository or organization managers to lay out a specific structure that should be followed when someone submits an issue.", "isCorrect": true},
+          {"answerText": "Make the necessary changes in the files so that conflict does not arise again.", "isCorrect": false}  
+        ]
+      }
+    ]
+  }, {
+    "courseTitle": "Git",
+    "questions": [
+      {
+        "questionText": "GIT is a distributed version control system and source code management (SCM) system with an emphasis to handle small and large projects with speed and efficiency.",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": "true"},
+          {"answerText": "False", "isCorrect": "false"}
+        ]
+      },
+       {
+        "questionText": "A repository contains a directory named .git, where git keeps all of its metadata for the repository. The content of the .git directory are private to git.",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": "true"},
+          {"answerText": "False", "isCorrect": "false"}
+        ]
+      },
+       {
+        "questionText": "The command that is used to write a commit message is “git commit –a”.  The –a on the command line instructs git to commit the new content of all tracked files that have been modified. You can use “git add<file>” before git commit –a if new files need to be committed for the first time",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": "true"},
+          {"answerText": "False", "isCorrect": "false"}
+        ]
+      },
+       {
+        "questionText": "What are the advantage of using GIT?",
+        "answerOptions": [
+          {"answerText": "They have poor GUI and usability", "isCorrect": "false"},
+          {"answerText": "It lacks window support and doesn't track empty folders", "isCorrect": "false"},
+          {"answerText": "Any sort of projects can use GIT", "isCorrect": "true"}
+        ]
+      },
+        {
+        "questionText": "What is the function of git clone?",
+        "answerOptions": [
+          {"answerText": "Reference to parent commit objects", "isCorrect": "false"},
+          {"answerText": "The git clone command creates a copy of an existing Git repository.To get the copy of a central repository, cloning  is the most common way used by programmers.", "isCorrect": "true"},
+          {"answerText": "An SHAI name, a 40 character string that uniquely identifies the commit object.", "isCorrect": "false"}
+        ]
+      },
+        {
+        "questionText": "Git uses C language. GIT is fast, and C language makes this possible by reducing the overhead of run times associated with high-level languages.",
+        "answerOptions": [
+          {"answerText": "True", "isCorrect": "true"},
+          {"answerText": "False", "isCorrect": "false"}
+        ]
+      },
+        {
+        "questionText": "What is a repository in Git?",
+        "answerOptions": [
+          {"answerText": "They have poor GUI and usabilityue", "isCorrect": "false"},
+          {"answerText": "Repository in Git is a place where Git stores all the files. Git can store the files either on the local repository or on the remote repository.", "isCorrect": "true"},
+          {"answerText": "Any sort of projects can use GIT", "isCorrect": "false"}  
+        ]
+      },
+        {
+        "questionText": "How can you create a repository in Git?",
+        "answerOptions": [
+          {"answerText": "Make the necessary changes in the files so that conflict does not arise again.", "isCorrect": "false"},
+          {"answerText": "It lacks window support and doesn't track empty folders", "isCorrect": "true"},
+          {"answerText": "2To create a repository, create a directory for the project if it does not exist, then run the command git init. By running this command .git directory will be created in the project directory.", "isCorrect": "false"}
+        ]
+      },
+        {
+        "questionText": "How does a git pull work?",
+        "answerOptions": [
+          {"answerText": "Git pull command pulls new changes or commits from a particular branch from your central repository and updates your target branch in your local repository.", "isCorrect": "true"},
+          {"answerText": "It lacks window support and doesn't track empty folders", "isCorrect": "false"},
+          {"answerText": "Git fetch is also used for the same purpose but it works in a slightly different way. When you perform a git fetch", "isCorrect": "false"}
+        ]
+      },
+       {
+          "questionText": "How will you know in Git if a branch has already been merged into master?",
+          "answerOptions": [
+            {"answerText": "It lists the branches that have not been merged.", "isCorrect": "false"},
+            {"answerText": "Git fetch is also used for the same purpose but it works in a slightly different way. When you perform a git fetch", "isCorrect": "false"},
+            {"answerText": "It lists the branches that have been merged into the current branch", "isCorrect": "true"}
+          ]
+        }
+    ]
+  }
+
+
+
+
+]

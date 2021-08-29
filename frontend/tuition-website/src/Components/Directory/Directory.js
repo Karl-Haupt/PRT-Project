@@ -1,5 +1,5 @@
 import React from 'react';
-import './Directory.css';
+// import './Directory.css';
 
 function Directory() {
     return (
