@@ -93,25 +93,4 @@ const FavouriteTopics = () => {
     )
 }
 
-export default FavouriteTopics
-{/* <div className="package">
-<form>
-    {favTopics.map(topic => (
-        <Fragment key={topic}>
-          <input 
-            type="checkbox"
-            className="ml-5"
-            id={topic}
-            name={topic}
-            value={topic}
-            
-            onClick={e => userTopics(topic)}
-           />
-          <label htmlFor={topic}>{topic}</label>
-          <br />
-        </Fragment>
-    ))}
 
-    <button onClick={userFav}>Submit</button>
-</form>
-</div> */}
