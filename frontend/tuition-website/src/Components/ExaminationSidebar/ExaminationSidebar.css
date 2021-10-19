@@ -24,3 +24,11 @@
     margin-top: 20px;
     cursor: pointer;
 }
+@media only screen and (max-width: 980px) { 
+    .examinationSidebar {
+        width: 1000px;
+    }
+    .examinationSidebar.open {
+        margin-left: -950px;
+    }
+}

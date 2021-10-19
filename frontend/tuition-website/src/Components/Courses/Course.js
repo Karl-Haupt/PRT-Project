@@ -10,10 +10,10 @@ function Course({ courseName }) {
 
             <br />
 
-            <Link to="">{courseName}</Link>
+            <Link to={`/courses/${courseName}`}>{courseName}</Link>
             
             <br />
-                <Link to="">
+                <Link to={`/courses/${courseName}`}>
                     <ArrowForwardIcon className="course__arrow"/>
                 </Link>
             <br />
